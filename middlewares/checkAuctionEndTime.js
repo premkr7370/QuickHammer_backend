@@ -21,3 +21,4 @@ export const checkAuctionEndTime = catchAsyncErrors(async (req, res, next) => {
   }
   next();
 });
+export default checkAuctionEndTime;
