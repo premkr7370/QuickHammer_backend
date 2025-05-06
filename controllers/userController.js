@@ -134,6 +134,8 @@ export const login = catchAsyncErrors(async (req, res, next) => {
 
           expires: new Date(Date.now()),
           httpOnly: true,
+               secure:true,
+          sameSite:"None",
         })
         .json({
           success: true,
